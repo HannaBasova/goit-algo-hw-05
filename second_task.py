@@ -11,7 +11,7 @@ a function that parses text, identifies all float numbers
 '''
 def generator_numbers(text: str)-> None:
     #looking for all float numbers in text
-    matches = re.findall(r'\b\d+[.]\d+\b', text)
+    matches = re.findall(r' \d+[.]\d+ ', text)
     for match in matches:
         yield float(match)
 
