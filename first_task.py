@@ -6,7 +6,7 @@ and reuse already calculated Fibonacci numbers
 '''
 
 
-def cahing_fibonacci():
+def caching_fibonacci():
     #create an empy dictionary  for memorization (cache)
     cache = {}
 
@@ -27,5 +27,5 @@ def cahing_fibonacci():
             return cache[n]
         # call the internal function and return the result
     return fibonacci
-fib = cahing_fibonacci()
+fib = caching_fibonacci()
 print(fib(15))
